@@ -34,6 +34,23 @@ namespace MSELSEP.Controllers
             return View();
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult Training_Cert()
+        {
+            return View();
+        }
+        public IActionResult Workshops()
+        {
+            return View();
+        }
+        public IActionResult Hackathons()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

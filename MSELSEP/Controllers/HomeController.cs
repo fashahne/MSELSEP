@@ -39,7 +39,7 @@ namespace MSELSEP.Controllers
             return View();
         }
 
-        public IActionResult Training_Cert()
+        public IActionResult Training()
         {
             return View();
         }
@@ -48,6 +48,10 @@ namespace MSELSEP.Controllers
             return View();
         }
         public IActionResult Hackathons()
+        {
+            return View();
+        }
+        public IActionResult Roles()
         {
             return View();
         }

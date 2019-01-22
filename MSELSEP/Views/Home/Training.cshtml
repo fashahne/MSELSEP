@@ -1,10 +1,138 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Training and Certification</title>
 </head>
 <body>
 
+    <p><h1>Recommended Learning Plans</h1></p>
+
+    <p>Based on the outlined business goals and aligned skills requirements, and leveraging the menu of training resources available, outline the recommended training plans for each role in the organization in the table below. Be sure to bring in the PSE for help and understanding with the training menu.</p>
+    <p><u>Training Menu</u></p>
+    <p>The training menu is divided into three tiers of training packages: <em>Foundational (Required), Advanced Role-Based, </em>and<em> Advanced Workload-Based</em>.</p>
+    <ul>
+        <li>Tier 1 offers an introductory start to Azure with self-paced and instructor-led options. (Required)</li>
+        <li>Tier 2 provides master Azure skills within more in-depth training with self-paced MOOC and instructor-led options.</li>
+        <li>Tier 3 provides instructor-led and facilitated training for a deep dive into Azure workloads with topic-based workshops and Hacks.</li>
+    </ul>
+    <p><img src="~/images/tiers.jpg" align="middle" width="800" height="445" /></p>
+    <p>
+        [Both T2 and T3 are advanced level content. T1 as introductory and required, then straight to
+        T3 if the desire is to learn about specific services\workloads.]
+    </p>
+
+    <div id="t1">
+
+
+        <p><h2>Foundational (T1)</h2></p>
+        <p>Introductory start to learning Azure.&nbsp; Available as Self-Paced (online) or Instructor Led.&nbsp;</p>
+
+        <strong>Azure Essentials - </strong>Micro learning with quick overview of a variety topics
+        
+
+                <ul>
+                    <li>16 tracks available</li>
+                    <li>1 day in-person</li>
+                    <li>Self-paced, online</li>
+                    <li>Prerequisite: None</li>
+                    <li>Available on <a href="https://azure.com/essentials">com/essentials</a></li>
+                    <li>Cost: Free</li>
+                </ul>
+          
+
+        <strong>Pluralsight Learning Paths &ndash; </strong>Video based learning across various job roles
+
+
+        <ul>
+            <li>7 Paths available across 26 Courses</li>
+            <li>Self-paced, online</li>
+            <li>Prerequisite: None</li>
+            <li>Available on <a href="https://docs.microsoft.com/en-us/learn/azure/">microsoft.com/en-us/training/learning-paths/</a></li>
+            <li>Cost: Free</li>
+        </ul>
+
+    </div>
+
+    <div id="t2">
+        <p><h2>Advanced Role-based (T2)</h2></p>
+        <p>Master Azure skills with in-depth role-based training that is aligned to certification.</p>
+        <p>T2 Training tracks:</p>
+        <ul>
+            <li>Cloud Administration</li>
+            <li>Solutions Architect</li>
+            <li>Data and Analytics</li>
+            <li>DevOps</li>
+        </ul>
+
+        <strong>Instructor Led</strong>
+        <ul>
+            <li>Traditional classroom trainings taught by Microsoft Certified trainers (MCT) and composed of Microsoft Official Courses (MOC)</li>
+            <li>20 Titles Available</li>
+            <li>In-Person or Online Instructor Led</li>
+            <li>Courses are 3-5 Days in Length</li>
+            <li>Delivered by Learning Partners</li>
+            <li>Prerequisite: T1, Azure Fundamental</li>
+            <li>$Cost: Fee based through Learning Partners</li>
+        </ul>
+
+        <strong>Online Self-Paced</strong>
+        <ul>
+            <li>Self-Paced MOOC</li>
+            <li>Opt for flexibility and choose online learning modalities such as Massive Open Online Courses (MOOC)</li>
+            <li>40+ Titles Available</li>
+            <li>Courses vary in Length</li>
+            <li>4 Learning Paths (Cloud Administration, Solutions Architect, Data &amp; Analytics, and DevOps)</li>
+            <li>Delivered by Learning Partners with tracking available</li>
+            <li>Prerequisite: Foundational Azure Experience or Training</li>
+            <li>$Cost: Fee based through Learning Partners</li>
+        </ul>
+
+        <strong>Certification &ndash; </strong>Validate your skills with Certification
+        <ul>            
+            <li>In-Person and Online Proctor Available</li>
+            <li>10+ Azure Exams Available</li>
+            <li>Prerequisite: Varies per exam</li>
+            <li>Available on <a href="http://aka.ms/AzureCertification">http://aka.ms/AzureCertification</a></li>
+            <li>Cost: Fee based</li>
+        </ul>
+
+
+
+    </div>
+
+    <div>
+        <p><h2>Advanced Workload-based (T3)</h2></p>
+        <p>Deep dive into Azure workloads with topic-based workshops and Hacks.</p>
+        <p><strong>Scenario-Based Workshops &ndash; &ldquo;Microsoft Cloud Workshops&rdquo; </strong>Develop technical skills via architectural solution design and Hands on Lab</p>
+        <ul>
+            <li>Instructor-Led</li>
+            <li>27 Available Workload focused topics available</li>
+            <li>Delivered by CSA/GBB</li>
+            <li>Prerequisite: Azure Experience in relevant topic, T1-Fundamental</li>
+            <li>Workshop Details <a href="http://aka.ms/mscloudworkshop">ms/</a><a href="http://aka.ms/mscloudworkshop">mscloudworkshop</a></li>
+            <li>Cost: Free if utilizing internal CSA/GBB</li>
+        </ul>
+        <p><strong>Suggested Workshop: </strong></p>
+        <ul>
+            <li>T3 track a customized workshop tailored to migration of on premise workloads into Azure</li>
+            <li>Azure design session that is specific to the workload to migrate.&nbsp;</li>
+            <li>Targeted to specifically moving an existing workload into Azure</li>
+        </ul>
+        
+        <p><strong>Hackathons</strong><strong>&ndash; </strong>Large-scale coding engagement focused on the development and knowledge transfer of strategic tech skills to both MSFT (CSA, TSP, GBB) and industry (customer, partner, developer) tech roles through challenge-based hack</p>
+        <ul>
+            <li>OpenHack details: <a href="https://aka.ms/CSEOpenHackRegister">ms/</a><a href="https://aka.ms/CSEOpenHackRegister">CSEOpenHackRegister</a></li>
+            <li>Duration: 3 days</li>
+            <li>Delivered by CSE</li>
+            <li>Prerequisite: Prequalified by CSE</li>
+            <li>Cost: Free</li>
+        </ul>
+
+
+    </div>
 </body>
 </html>

@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Customize Training Plan</title>
+</head>
+<body>
+
+    <h1>Create Training Plan</h1>
+    <p>
+        Here customer can create their own training request for any number of employees. Also can add request for any workshop or hackathon. A price will be calculated
+        based on the request quote and email notifiction would be sent to the Microsoft owner for this customer account
+    </p>
+
+
+
+
+    <div id="requestForm">
+        <p><strong>Customer Account Azure Skills Learning Plan</strong></p>
+
+        <ul>
+
+            <li>Customer key contact:</li>
+            <input type="text" name="fname">
+            <li>Details:</li>
+            <input type="text" name="fname">
+            <li>Name:</li>
+            <input type="text" name="fname">
+            <li>MSX Success Engagement ID:</li>
+            <input type="text" name="fname">
+            <li>Email:</li>
+            <input type="text" name="fname">
+            <li>Phone:</li>
+            <input type="text" name="fname">
+            <li>Address/location:</li>
+            <input type="text" name="fname">
+
+        </ul><br>
+
+        
+            <p><strong>Customer Situation</strong></p>
+               <p>
+                   Describe the business goals. How will the learning and development support the business goals?<br>
+                   For example: XYZ is currently setting up a Cloud strategy and looking at enabling multiple cloud solutions within the business to help them reduce production cost and improve speed of technology delivery. As part of this strategy, they want to train these different groups within the organization: Developers, IT Operations, Security, IT Architecture, Innovation.
+
+               </p>
+
+                <textarea rows="4" cols="50"></textarea><br><br>
+            
+        
+        
+            <p><strong>Skill Requirements</strong></p>
+                <p>
+                    Describe the skills required to meet the business goals. <br>
+                    For example: In order to accomplish their business goals, XYZ has a need to help ramp up specific skills in Application Modernization (App Services, Containers, LogicApps, Functions, API Management, Application Insights) along with some Cloud Infrastructure Fundamentals (Compute, Storage, Networking, Backup, Monitoring) for staff that have not yet had the opportunity to work with Azure. They plan to train 100 people total in different cities: New York, Tempa, Toronto and London.
+
+
+                </p>
+
+                <textarea rows="4" cols="50"></textarea>
+
+           
+       
+
+
+        <br><br>
+        <p><strong>Customize Plan</strong></p>
+        <p>Number of Trainees:</p>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+
+        <p>Training Course:</p>
+        <select>
+            <option value="AZ100">Azure Administrator, Deployment (AZ100)</option>
+            <option value="AZ200">Developing Solutions for Microsoft Azure (AZ-203)</option>
+            <option value="AZ300">Microsoft Azure (AZ-300)</option>
+        </select>
+
+        <br>
+        <p><strong>Additional</strong></p>
+        <p>
+            <input type="checkbox" name="hackathon" value="Hackathon"> We need Hackathon<br>
+            Hackathon Details:<input type="text" name="fname"><br>
+        </p>
+
+        <p>
+
+            <input type="checkbox" name="vehicle" value="Car" checked> We need Workshop<br>
+            Workshop Details: <input type="text" name="fname"><br>
+        </p>
+
+        <input type="submit" value="Submit">
+
+
+    </div>
+</body>
+</html>

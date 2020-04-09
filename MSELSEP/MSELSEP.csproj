@@ -3,10 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>6da325ca-da52-4400-9f01-d2b3b21e67e2</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/97defacf-a3c0-4c62-9576-c175917fc6ca/resourcegroups/MSTrainingEnablement/providers/microsoft.insights/components/MSTrainingEnablement</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/97defacf-a3c0-4c62-9576-c175917fc6ca/resourcegroups/MSTrainingEnablement/providers/microsoft.insights/components/MSTrainingEnablement</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.12.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>

@@ -2,6 +2,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style type="text/css">
+        .mylinks li {
+            float: right; /* Fit all your links nicely in one line*/
+            margin: 0 7px; /* Give them to the left and right a little room to breathe */
+            /* You can adjust the space by modifying the 5px value, */
+            /* the 0 modifies the top/bottom spacing */
+        }
+
+        .mylinks a {
+            color: black; /* fancy red color for your links*/
+        }
+
+        
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enterprise Skills Initiative</title>
@@ -27,15 +41,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+
                 </button>
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Enterprise Skills Initiative</a>
+                @*<a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><img src="~/images/Microsoft Logo.png" style="height:10%; width:10%;"></a>*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     @*<li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>*@
+                    @*<a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Enterprise Skills Initiative</a>*@
                     <li><a asp-area="" asp-controller="Home" asp-action="CustomizeTraining">Customize Training</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="">Cloud Skills Challenge</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Login">Login</a></li>
+                    @*<li><img src="~/images/Microsoft Logo.png" style="height:10%; width:10%;"></li>*@
                     @*<li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>*@
                 </ul>
             </div>
@@ -47,9 +65,22 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2020 - Microsoft Deloitte ESI</p>
+        <footer style="background-color: black;">
+           
+            <ul class="mylinks">
+
+                <li> <a href="https://azure.microsoft.com/en-us/support/legal/subscription-agreement/">Legal</a></li>
+                
+                <li><a href="https://privacy.microsoft.com/en-us/privacystatement">Privacy and Cookies</a></li>
+                
+                <li>© Microsoft 2020</li>
+                
+
+
+            </ul>
         </footer>
+
+
     </div>
 
     <environment include="Development">

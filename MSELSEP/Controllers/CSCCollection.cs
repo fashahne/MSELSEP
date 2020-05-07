@@ -1,57 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using MSELSEP.Models;
-using MSELSEP.Controllers;
-using System;
 using System.Net.Http;
 using System.Web;
 using MSELSEP.Models;
 using Newtonsoft.Json;
-using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace MSELSEP.Controllers
 {
-    public class HomeController : Controller
+    public class CSCCollection: HomeController
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        public IActionResult Login()
-        {
-            return View();
-        }
-
-        public IActionResult Training()
-        {
-            return View();
-        }
-
-
         static async void MakeRequest()
         {
             var client = new HttpClient();
@@ -87,11 +43,12 @@ namespace MSELSEP.Controllers
 
                 var uri = "https://csc-praxeum-prod-apimgt.azure-api.net/get/api/contests/" + stringarr[i] + queryString;
 
-                try {
-                    var response = await client.GetAsync(uri);
-                    response.EnsureSuccessStatusCode();
-                    string responseBody = await response.Content.ReadAsStringAsync();
-                
+                var response = await client.GetAsync(uri);
+                response.EnsureSuccessStatusCode();
+                string responseBody = await response.Content.ReadAsStringAsync();
+
+                try
+                {
                     CSCInfo info = JsonConvert.DeserializeObject<CSCInfo>(responseBody);
 
                     Console.WriteLine(info.ContestId);
@@ -102,13 +59,10 @@ namespace MSELSEP.Controllers
                     Console.WriteLine(info.Country);
                     Console.WriteLine("-----------------------");
 
-                    
-
                     //return JsonConvert.DeserializeObject<object>(responseBody);
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e);
                     //msg
                     throw e;
                 }
@@ -116,36 +70,7 @@ namespace MSELSEP.Controllers
 
             }
 
-            
-        }
 
-        public IActionResult Workshops()
-        {
-           MakeRequest();
-            
-            return View();
-        }
-        public IActionResult Hackathons()
-        {
-            return View();
-        }
-        public IActionResult Roles()
-        {
-            return View();
-        }
-        public IActionResult Course()
-        {
-            return View();
-        }
-        public IActionResult CustomizeTraining()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

@@ -14,34 +14,34 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
+        @*<li data-target="#myCarousel" data-slide-to="1"></li>*@
         @*<li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>*@
     </ol>
     <div class="carousel-inner" role="listbox">
 
-        <div class="item active">
+        @*<div class="item active">
             <img src="~/images/banner4.jpg" alt="ASP.NET" class="img-responsive" />
 
             <div class="carousel-caption" role="option">
                 <p>
-                    @*Enterprise Skills Initiative for Deloitte*@
+                    Enterprise Skills Initiative for Deloitte
                     <a class="btn btn-default" href="~/Home/Training">
                         Learn More
                     </a>
                 </p>
             </div>
-        </div>
+        </div>*@
 
-        <div class="item">
+        <div class="item active">
             <img src="~/images/banner5.jpg" alt="ASP.NET" class="img-responsive" />
 
             <div class="carousel-caption" role="option">
                 <p>
                     @*Cloud Skills Challenge for Deloitte*@
-                    <a class="btn btn-default" href="~/Home/Training">
+                    @*<a class="btn btn-default" href="~/Home/Training">
                         Learn More
-                    </a>
+                    </a>*@
                 </p>
             </div>
         </div>
@@ -80,11 +80,11 @@
     </a>
 </div>
 
-<div class="row" style="background-color: aliceblue; padding-top: 35px;">
+<div class="row" style="background-color: black; padding-top: 35px; color:darkgrey">
     <div class="col-md-6">
-
+        
         <p>
-        <img src="~/images/PVA.png"> <h4><b>...Hi Deloitte!</b></h4>
+        @*<img src="~/images/PVA.png">*@ <h4><b>...Hi Deloitte!</b></h4>
 
             <h4>
                 I can help you get registered for Microsoft Cloud Skills Challenge. You can ask me questions like..
@@ -98,7 +98,9 @@
                     <li>"List learning path"</li>
                     <li>"Register for learning path"</li>
                     @*<li>""</li>*@
-
+                    @*<a href="~/Home/Workshops">
+                        <h3>Workshops-Hackathons</h3>
+                    </a>*@
 
                 </ul>
 

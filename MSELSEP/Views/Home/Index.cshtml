@@ -2,190 +2,178 @@
     ViewData["Title"] = "Home Page";
 }
 
-<script type="text/javascript">
-  var appInsights=window.appInsights||function(a){
-    function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
-    }({
-        instrumentationKey:"60846d8e-1b31-4419-9017-cddad5b256ed"
-    });
-    
-  window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
-</script>
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        @*<li data-target="#myCarousel" data-slide-to="1"></li>*@
-        @*<li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>*@
-    </ol>
-    <div class="carousel-inner" role="listbox">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Enterprise Skills Initiative</title>
 
-        @*<div class="item active">
-            <img src="~/images/banner4.jpg" alt="ASP.NET" class="img-responsive" />
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (a) {
+            function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement("script"); b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;)b("track" + f.pop()); if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) { f = "onerror", b("_" + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c["_" + f](a, b, d, e, h), i } } return c
+        }({
+            instrumentationKey: "60846d8e-1b31-4419-9017-cddad5b256ed"
+        });
 
-            <div class="carousel-caption" role="option">
-                <p>
-                    Enterprise Skills Initiative for Deloitte
-                    <a class="btn btn-default" href="~/Home/Training">
-                        Learn More
-                    </a>
-                </p>
+        window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView();
+    </script>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (a) {
+            function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement("script"); b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;)b("track" + f.pop()); if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) { f = "onerror", b("_" + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c["_" + f](a, b, d, e, h), i } } return c
+        }({
+            instrumentationKey: "60846d8e-1b31-4419-9017-cddad5b256ed"
+        });
+
+        window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView();
+    </script>
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            @*<li data-target="#myCarousel" data-slide-to="1"></li>*@
+            @*<li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>*@
+        </ol>
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+                <img src="~/images/banner4.jpg" alt="ASP.NET" class="img-responsive" />
+
+                <div class="carousel-caption" role="option">
+                    <p>
+                        @*Enterprise Skills Initiative for Deloitte
+                        <a class="btn btn-default" href="~/Home/Training">
+                            Learn More
+                        </a>*@
+                    </p>
+                </div>
             </div>
-        </div>*@
 
-        <div class="item active">
-            <img src="~/images/banner5.jpg" alt="ASP.NET" class="img-responsive" />
+            @*<div class="item active">
+                    <img src="~/images/banner5.jpg" alt="ASP.NET" class="img-responsive" />
 
-            <div class="carousel-caption" role="option">
-                <p>
-                    @*Cloud Skills Challenge for Deloitte*@
-                    @*<a class="btn btn-default" href="~/Home/Training">
-                        Learn More
-                    </a>*@
-                </p>
-            </div>
+                    <div class="carousel-caption" role="option">
+                        <p>
+                            Cloud Skills Challenge for Deloitte
+                            <a class="btn btn-default" href="~/Home/Training">
+                                Learn More
+                            </a>
+                        </p>
+                    </div>
+                </div>*@
+
+            @*<div class="item">
+                    <img src="~/images/banner3.svg" alt="Microsoft Azure" class="img-responsive" />
+                    <div class="carousel-caption" role="option">
+                        <p>
+                            Role based training and certification on Microsoft Azure and Power Platform
+                            <a class="btn btn-default" href="~/Home/Hackathons">
+                                Learn More
+                            </a>
+                        </p>
+                    </div>
+                </div>*@
+
+            @*<div class="item">
+                    <img src="~/images/banner3.svg" alt="Visual Studio" class="img-responsive" />
+                    <div class="carousel-caption" role="option">
+                        <p>
+                            Microsoft arranges Workshops and Hackathon around the world.
+                            <a class="btn btn-default" href="~/Home/Workshops">
+                                Learn More
+                            </a>
+                        </p>
+                    </div>
+                </div>*@
         </div>
-
-        @*<div class="item">
-            <img src="~/images/banner3.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Role based training and certification on Microsoft Azure and Power Platform
-                    <a class="btn btn-default" href="~/Home/Hackathons">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>*@
-
-        @*<div class="item">
-            <img src="~/images/banner3.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Microsoft arranges Workshops and Hackathon around the world.
-                    <a class="btn btn-default" href="~/Home/Workshops">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>*@
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
 
-<div class="row" style="background-color: black; padding-top: 35px; color:darkgrey">
-    <div class="col-md-6">
-        
-        <p>
-        @*<img src="~/images/PVA.png">*@ <h4><b>...Hi Deloitte!</b></h4>
+    <div class="row" style="background-color: black; padding-top: 35px; color:darkgrey; padding-left: 20px; padding-right: 20px; align-content:center;">
 
-            <h4>
-                I can help you get registered for Microsoft Cloud Skills Challenge. You can ask me questions like..
-            </h4>
+
+
+        @*<h1>Microsoft Enterprise Skills Initiative for Deloitte</h1>*@
+
+        @*<a href="~/Docs/doc1.docx"> [Download Plan]</a>*@
+        <p style="text-align:center">
+
+
+            <em>"Our mission is to empower every person and every organization on the planet to achieve more."</em>
         </p>
-        <br>
-        <p>
 
-            <h4>
-                <ul>
-                    <li>"List learning path"</li>
-                    <li>"Register for learning path"</li>
-                    @*<li>""</li>*@
-                    @*<a href="~/Home/Workshops">
-                        <h3>Workshops-Hackathons</h3>
-                    </a>*@
+        <p style="text-align:left">
+            Enterprise Skills Initiative (ESI) for Deloitte is a program to develop skills and expertise in Azure, Power Platform and Microsoft technologies. Microsoft's ESI for Deloitte offers online/onsite instructor-based training on Azure, self-paced training - Cloud Skills Challenges, tons of workshops, and hackathons.
 
-                </ul>
-
-            </h4>
-            <br>
-            <h2><b> Customer Code: 641727</b></h2>
-
+            Deloitte Azure administrators, architects, developers and DevOps can become an expert in their Azure domain knowledge and develop additional skills on other Azure services. Eventually it leads learners to earn Microsoft certifications on Azure, Power Platform and other Microsoft technologies.
 
         </p>
-    </div>
-
-    <div class="col-md-6">
-        
-        <img src="~/images/PVA.png">
-        <p><iframe src="https://powerva.microsoft.com/webchat/bots/83b9ed2d-729c-4aca-81a6-c3e2c150ee7b" frameborder="0" style="width: 100%; height: 400px;"></iframe></p>
-
-        </div>
-
 
     </div>
 
+    <div class="row" style="background-color: black; color:darkgrey; padding-top: 35px; text-align: inherit; padding-left: 20px; padding-right: 20px; padding-bottom:20px;">
 
-    @*<div class="row" style="background-color:aliceblue">
+        <div class="col-md-3">
+            <a href="~/Home/Training" style="color: green">
+                <h3>Training & Certifications</h3>
+            </a>
 
-        <div style="height: 400px; width: 200px; align-content: center">
-
-
-            </div>
-        <div>
-
-            <h1>Microsoft Enterprise Skills Initiative for Deloitte</h1>
-            <p>
-                    <img src="~/images/Enter_Logo.jpg" align="middle" width="543" height="133" />
-
-                </p>
-            <a href="~/Docs/doc1.docx"> [Download Plan]</a>
-            <p>
-
-
-                <em>"Our mission is to empower every person and every organization on the planet to achieve more."</em> Microsoft Enterprise Skills Initiative (ESI) helps customer to develop skills and expertise in Azure. Microsoft's ESI for Deloitte offers online/onsite instructor based training on Azure, workshops, and hackathons to
-                help customer successfully create Azure based solutions. Azure administrator, architects, developers and DevOps can develop skills on different Azure services. And also earn Microsoft certification after taking role based
-                training. Our Cloud Skills Challenge is a self-paced learning process. It will help Deloitte teams to quickly develop skills and expertise on Azure, hands-on lab and earn Microsoft learn points.
-            </p>
-
-            <div class="col-md-3">
-                <a href="~/Home/Training">
-                    <h3>Training & Certifications</h3>
-                </a>
-
-                Microsoft helps customers and partners to develop skills in Azure
-                in Azure, earn Microsoft Certifications by providing training online or onsite.<br>
-                <a href="~/Home/CustomizeTraining"> <input type="submit" value="Customize Training Plan"></a>
-
-
-            </div>
-            <div class="col-md-3">
-                <a href="~/Home/Roles">
-                    <h3>Cloud Skills Challenge</h3>
-                </a>
-
-                Self paced, online, and FREE through Microsoft Learn. Gamified to encourage and reward participation with no Azure subscription required
-                There are many Azure learning paths: Administrator, AI Engineer, Solution Developer, DevOps, Data Engineer, Data Scientist, Solution Architect
-
-
-            </div>
-
-
-            <div class="col-md-3">
-                <a href="~/Home/Workshops">
-                    <h3>Workshops-Hackathons</h3>
-                </a>
-
-                Microsoft arranges series of workshops and hackathons for Deloitte around the globe in Microsoft locations, also in Deloitte offices and partner locations. These are lead by our CSA, CSE, GBB and TAM.
-
-
-
-
-            </div>
-
+            Microsoft online/onsite training program for Deloitte in Azure, Power Platform and O365 through our learning partners worldwide<br>
+            @*<a href="~/Home/CustomizeTraining"> <input type="submit" value="Customize Training Plan"></a>*@
 
 
         </div>
+        <div class="col-md-3">
+            <a href="~/Home/CscReg" style="color: green">
+                <h3>Cloud Skills Challenge</h3>
+            </a>
 
-    </div>*@
-   
+            Self-paced, online, and FREE through Microsoft Learn. Gamified to encourage and reward participation with no Azure subscription required!
+            There are many Azure learning paths: Administrator, AI Engineer, Solution Developer, DevOps, Data Engineer, Data Scientist and Solution Architect.
+
+
+        </div>
+        <div class="col-md-3">
+            <a href="~/Home/Workshops" style="color: green">
+                <h3>Workshops & Hackathons</h3>
+            </a>
+
+            Microsoft arranges series of workshops and hackathons for Deloitte around the globe in Microsoft locations, also in Deloitte offices and partner locations. These are lead by our CSA, CSE, GBB and TAM teams.
+
+        </div>
+
+        <div class="col-md-3">
+            <a href="" style="color: green">
+                <h3>Additional Info</h3>
+            </a>
+
+            Here are some additional documents on Microsoft's Enterprise Skills Initiative and Cloud Skills Challenge.
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
     @*<div class="row">
         <h1>Overview</h1>
         <img src="~/images/quick_banner.jpg" width="1000" height="54"/>
@@ -263,4 +251,3 @@
 
         </div>*@
 
-   

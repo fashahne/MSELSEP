@@ -5,95 +5,261 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Customize Training Plan</title>
+    <title>Training & Certifications</title>
 </head>
 <body>
 
-    <h1>Create Training Plan</h1>
-    <p>
-        Here customer can create their own training request for any number of employees. Also can add request for any workshop or hackathon. A price will be calculated
-        based on the request quote and email notifiction would be sent to the Microsoft owner for this customer account
-    </p>
+    <div style="background-color: black; padding-top: 35px; position:center">
+        <img src="~/images/tiers.jpg" width="800" height="445" />
+    </div>
+
+    <div class="row" style="background-color: black; color:darkgrey; padding-top: 35px; text-align: inherit; padding-left: 20px; padding-right: 20px; padding-bottom:20px;">
+
+        <div class="col-md-4">
 
 
+            <p><h4>Foundational</h4></p>
+
+            <strong style="color:white">Microsoft Learn </strong>
+            <ul>
+                <li>Self-paced, online</li>
+                <li>Prerequisite: None</li>
+                <li>Available on <a href="https://docs.microsoft.com/en-us/learn/azure/" style="color:green">Microsoft Learn</a></li>
+                <li>Cost: Free</li>
+            </ul>
 
 
-    <div id="requestForm">
-        <p><strong>Customer Account Azure Skills Learning Plan</strong></p>
+            <strong style="color:white">Pluralsight Learning Paths </strong>
+            <ul>
+                <li>Self-paced, online</li>
+                <li>Prerequisite: None</li>
+                <li>Video based learning</li>
+            </ul>
 
-        <ul>
+        </div>
 
-            <li>Customer key contact:</li>
-            <input type="text" name="fname">
-            <li>Details:</li>
-            <input type="text" name="fname">
-            <li>Name:</li>
-            <input type="text" name="fname">
-            <li>MSX Success Engagement ID:</li>
-            <input type="text" name="fname">
-            <li>Email:</li>
-            <input type="text" name="fname">
-            <li>Phone:</li>
-            <input type="text" name="fname">
-            <li>Address/location:</li>
-            <input type="text" name="fname">
+        <div class="col-md-4">
+            <p><h4>Advanced Role-based</h4></p>
 
-        </ul><br>
+            <strong style="color:white">Certifications</strong>
+            <ul>
+                <li>Azure Cloud Administrator</li>
+                <li>Azure Solutions Architect</li>
+                <li>Azure Solutions Developer</li>
+                <li>Azure DevOps Expert</li>
+                <li>Azure AI Engineer</li>
+                <li>Azure Data Engineer</li>
+                <li>Azure IoT Engineer</li>
+                <li>Azure Security Engineer..more</li>
 
-        
-            <p><strong>Customer Situation</strong></p>
-               <p>
-                   Describe the business goals. How will the learning and development support the business goals?<br>
-                   For example: XYZ is currently setting up a Cloud strategy and looking at enabling multiple cloud solutions within the business to help them reduce production cost and improve speed of technology delivery. As part of this strategy, they want to train these different groups within the organization: Developers, IT Operations, Security, IT Architecture, Innovation.
+            </ul>
 
-               </p>
+            <strong style="color:white">Instructor-Led Trainings </strong>
+            <ul>
+                <li>Traditional classroom trainings taught by Microsoft Certified trainers (MCT) and composed of Microsoft Official Courses (MOC)</li>
+                <li>20 Titles Available</li>
+                <li>In-Person or online Instructor Led</li>
+                <li>Trainings are 3-5 Days</li>
+                <li>Delivered by our Learning Partners</li>
+                <li>Prerequisite: T1, Azure Fundamental</li>
+                <li>$Cost: Funded by ECIF</li>
+                <li>Prerequisite: Varies per exam</li>
+                <li>Available on <a href="http://aka.ms/AzureCertification" style="color:green">Azure Certifications</a></li>
+                <li>Exam Vouchar is provided by Microsoft</li>
 
-                <textarea rows="4" cols="50"></textarea><br><br>
-            
-        
-        
-            <p><strong>Skill Requirements</strong></p>
-                <p>
-                    Describe the skills required to meet the business goals. <br>
-                    For example: In order to accomplish their business goals, XYZ has a need to help ramp up specific skills in Application Modernization (App Services, Containers, LogicApps, Functions, API Management, Application Insights) along with some Cloud Infrastructure Fundamentals (Compute, Storage, Networking, Backup, Monitoring) for staff that have not yet had the opportunity to work with Azure. They plan to train 100 people total in different cities: New York, Tempa, Toronto and London.
+            </ul>
+
+        </div>
+
+        <div class="col-md-4">
+            <p><h4>Advanced Workload-based</h4></p>
+            <p>
+                Deep dive into Azure workloads with topic-based workshops and Hackathons.
+                Scenario-Based Workshops on Azure Cloud and hands-on-lab experience. Large-scale coding
+                engagement focused on the development and knowledge transfer of strategic tech skills.
+            </p>
+            <p><strong style="color:white">Workshops</strong></p>
+            <ul>
+                <li>Delivered by Microsoft CSA or GBB</li>
+                <li>27 Available Workload focused topics available</li>
+                <li>Prerequisite: Azure Experience in relevant topic, T1-Fundamental</li>
+                <li><a href="http://aka.ms/mscloudworkshop" style="color:green">Workshop Details</a></li>
+                <li>Cost: Free if utilizing internal CSA/GBB</li>
+            </ul>
 
 
-                </p>
+            <p><strong style="color:white">Hackathons</strong></p>
+            <ul>
+                <li><a href="https://aka.ms/CSEOpenHackRegister" style="color:green">OpenHack details</a></li>
+                <li>Duration: 2-3 days</li>
+                <li>Delivered by Microsoft CSE</li>
+                <li>Prerequisite: Prequalified by CSE</li>
+                <li>Cost: Free</li>
+            </ul>
 
-                <textarea rows="4" cols="50"></textarea>
 
-           
-       
-
-
-        <br><br>
-        <p><strong>Customize Plan</strong></p>
-        <p>Number of Trainees:</p>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-
-        <p>Training Course:</p>
-        <select>
-            <option value="AZ100">Azure Administrator, Deployment (AZ100)</option>
-            <option value="AZ200">Developing Solutions for Microsoft Azure (AZ-203)</option>
-            <option value="AZ300">Microsoft Azure (AZ-300)</option>
-        </select>
-
-        <br>
-        <p><strong>Additional</strong></p>
-        <p>
-            <input type="checkbox" name="hackathon" value="Hackathon"> We need Hackathon<br>
-            Hackathon Details:<input type="text" name="fname"><br>
-        </p>
-
-        <p>
-
-            <input type="checkbox" name="vehicle" value="Car" checked> We need Workshop<br>
-            Workshop Details: <input type="text" name="fname"><br>
-        </p>
-
-        <input type="submit" value="Submit">
-
+        </div>
 
     </div>
+
+
+    @*<div class="row" style="background-color:azure">
+            <h1>Training Course Contents</h1>
+            <div class="col-md-4">
+                <strong>Azure Administrator, Deployment (AZ100) </strong>
+                <div class="ftindex">
+                    <h5>Manage Subscriptions and Resources</h5>
+                    <ul>
+                        <li>Managing Azure Subscriptions</li>
+                        <li>Access Management for Cloud Resources</li>
+                        <li>Monitoring and Diagnostics</li>
+                        <li>Log Analytics</li>
+                        <li>Azure Resource Manager</li>
+                        <li>Azure Tips, Tricks, and Tools</li>
+                    </ul>
+                    <h5>Implementing and Managing Storage</h5>
+                    <ul>
+                        <li>Overview of Azure Storage</li>
+                        <li>Storage Services</li>
+                        <li>Securing and Managing Storage</li>
+                        <li>Storing and Accessing Data</li>
+                        <li>Monitoring Storage</li>
+                    </ul>
+                    <h5>Deploying and Managing Virtual Machines</h5>
+                    <ul>
+                        <li>Overview of Azure Machines</li>
+                        <li>Creating Virtual Machines</li>
+                        <li>Deploying Virtual Machine Images</li>
+                        <li>Configuring Virtual Machines</li>
+                        <li>Configuring Availability and Extensibility</li>
+                        <li>Managing and Monitoring Virtual Machines</li>
+                    </ul>
+                    <a href="~/Home/Course"> ....continue course content</a>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+
+                <strong>Developing Solutions for Microsoft Azure (AZ-203)</strong>
+                <h5>Implement solutions that use virtual machines (VM)</h5>
+                <ul>
+                    <li>Provision VMs</li>
+                    <li>Create ARM templates</li>
+                    <li>Configure Azure Disk Encryption for VMs</li>
+                </ul>
+                <h5>Implement batch jobs by using Azure Batch Services</h5>
+                <ul>
+                    <li>Manage batch jobs by using Batch Service API</li>
+                    <li>Run a batch job by using Azure CLI, Azure portal, and other tools</li>
+                    <li>Write code to run an Azure Batch Services batch job</li>
+                </ul>
+                <h5>Create containerized solutions</h5>
+                <ul>
+                    <li>Create an Azure Managed Kubernetes Service (AKS) cluster</li>
+                    <li>Create container images for solutions</li>
+                    <li>Publish an image to the Azure Container Registry</li>
+                    <li>Run containers by using Azure Container Instance or AKS</li>
+                </ul>
+                <h5>Create Azure App Service Web Apps</h5>
+                <ul>
+                    <li>Create an Azure App Service Web App</li>
+
+                </ul>
+
+                <a href="~/Home/Course"> ....continue course content</a>
+            </div>
+
+        </div>*@
+
+
+
+<div class="row" style="background-color: black; color:darkgrey; padding-top: 35px; text-align: inherit; padding-left: 20px; padding-right: 20px; padding-bottom:20px;">
+    <h1>Customize Training</h1>
+    <p>
+        Deloitte can create training request for any number of employees. 
+        Also can add request for any workshop or hackathon. A price will be calculated
+        based on the request quote and email notifiction would be sent to the Microsoft owner for this customer account
+    </p>
+</div>
+      
+
+
+
+
+        <div id="requestForm">
+            <p><strong>Customer Account Azure Skills Learning Plan</strong></p>
+
+            <ul>
+
+                <li>Customer key contact:</li>
+                <input type="text" name="fname">
+                <li>Details:</li>
+                <input type="text" name="fname">
+                <li>Name:</li>
+                <input type="text" name="fname">
+                <li>MSX Success Engagement ID:</li>
+                <input type="text" name="fname">
+                <li>Email:</li>
+                <input type="text" name="fname">
+                <li>Phone:</li>
+                <input type="text" name="fname">
+                <li>Address/location:</li>
+                <input type="text" name="fname">
+
+            </ul><br>
+
+
+            <p><strong>Customer Situation</strong></p>
+            <p>
+                Describe the business goals. How will the learning and development support the business goals?<br>
+
+            </p>
+
+            <textarea rows="4" cols="50"></textarea>
+
+
+
+            <p><strong>Skill Requirements</strong></p>
+            <p>
+                Describe the skills required to meet the business goals. <br>
+
+
+            </p>
+
+            <textarea rows="4" cols="50"></textarea>
+
+
+
+
+
+            <br><br>
+            <p><strong>Customize Plan</strong></p>
+            <p>Number of Trainees:</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+
+            <p>Training Course:</p>
+            <select>
+                <option value="AZ100">Azure Administrator, Deployment (AZ100)</option>
+                <option value="AZ200">Developing Solutions for Microsoft Azure (AZ-203)</option>
+                <option value="AZ300">Microsoft Azure (AZ-300)</option>
+            </select>
+
+            <br>
+            <p><strong>Additional</strong></p>
+            <p>
+                <input type="checkbox" name="hackathon" value="Hackathon"> We need Hackathon<br>
+                Hackathon Details:<input type="text" name="fname"><br>
+            </p>
+
+            <p>
+
+                <input type="checkbox" name="vehicle" value="Car" checked> We need Workshop<br>
+                Workshop Details: <input type="text" name="fname"><br>
+            </p>
+
+            <input type="submit" value="Submit">
+
+
+        </div>
 </body>
 </html>

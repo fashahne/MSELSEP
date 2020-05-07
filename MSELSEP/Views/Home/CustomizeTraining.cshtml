@@ -9,11 +9,13 @@
 </head>
 <body>
 
-    <div style="background-color: black; padding-top: 35px; position:center">
-        <img src="~/images/tiers.jpg" width="800" height="445" />
-    </div>
 
     <div class="row" style="background-color: black; color:darkgrey; padding-top: 35px; text-align: inherit; padding-left: 20px; padding-right: 20px; padding-bottom:20px;">
+
+        <div style=" padding-top: 35px; padding-bottom:35px; padding-right:50px;">
+            <img src="~/images/learningpath_graphic.svg"><font style="font-size:34px;">Training & Certifications</font>
+        </div>
+
 
         <div class="col-md-4">
 
@@ -173,93 +175,58 @@
 
 
 
-<div class="row" style="background-color: black; color:darkgrey; padding-top: 35px; text-align: inherit; padding-left: 20px; padding-right: 20px; padding-bottom:20px;">
-    <h1>Customize Training</h1>
-    <p>
-        Deloitte can create training request for any number of employees. 
-        Also can add request for any workshop or hackathon. A price will be calculated
-        based on the request quote and email notifiction would be sent to the Microsoft owner for this customer account
-    </p>
-</div>
-      
+<div class="row" style="background-color: black; color:darkgrey; padding-top: 35px; text-align: inherit; padding-left: 20px; padding-right: 20px; padding-bottom:35px; border-color:darkgrey; border-style:dotted;">
+    <h1>Request Microsoft Training</h1>
 
 
 
+    <div class="col-md-6">
 
-        <div id="requestForm">
-            <p><strong>Customer Account Azure Skills Learning Plan</strong></p>
-
-            <ul>
-
-                <li>Customer key contact:</li>
-                <input type="text" name="fname">
-                <li>Details:</li>
-                <input type="text" name="fname">
-                <li>Name:</li>
-                <input type="text" name="fname">
-                <li>MSX Success Engagement ID:</li>
-                <input type="text" name="fname">
-                <li>Email:</li>
-                <input type="text" name="fname">
-                <li>Phone:</li>
-                <input type="text" name="fname">
-                <li>Address/location:</li>
-                <input type="text" name="fname">
-
-            </ul><br>
+        <p><strong>Deloitte Situation</strong></p>
+        <textarea rows="4" cols="50" placeholder="How will the learning and development support the business goals?"></textarea>
 
 
-            <p><strong>Customer Situation</strong></p>
-            <p>
-                Describe the business goals. How will the learning and development support the business goals?<br>
-
-            </p>
-
-            <textarea rows="4" cols="50"></textarea>
+        <p><strong>Skill Requirements</strong></p>
+        <textarea rows="4" cols="50" placeholder="What are the skills required to meet the business goals."></textarea>
 
 
+        <p>Number of Trainees:</p>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
 
-            <p><strong>Skill Requirements</strong></p>
-            <p>
-                Describe the skills required to meet the business goals. <br>
+        <p>Training Course:</p>
+        <select>
+            <option value="AZ100">Azure Administrator, Deployment (AZ100)</option>
+            <option value="AZ200">Developing Solutions for Microsoft Azure (AZ-203)</option>
+            <option value="AZ300">Microsoft Azure (AZ-300)</option>
+            <option value="AZ300">Microsoft Azure (AZ-300)</option>
+            <option value="AZ300">Microsoft Azure (AZ-300)</option>
+            <option value="AZ300">Microsoft Azure (AZ-300)</option>
+            <option value="AZ300">Microsoft Azure (AZ-300)</option>
+        </select>
+    </div>
 
+    <div class="col-md-6">
+        <p>
+            Your Deloitte Email:<br>
+            <input type="text" name="deloitteEmail" placeholder="example@deloitte.com">
+        </p>
+        <p>
+            Your Microsoft Contact:<br>
+            <input type="text" name="msftEmail" placeholder="example@microsoft.com">
+        </p>
+        <p>
+            Deloitte Customer Code:<br>
+            <input type="text" name="csCode" placeholder="641727">
+        </p>
+        <input type="submit" value="Submit">
+    </div>
 
-            </p>
-
-            <textarea rows="4" cols="50"></textarea>
-
-
-
-
-
-            <br><br>
-            <p><strong>Customize Plan</strong></p>
-            <p>Number of Trainees:</p>
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-
-            <p>Training Course:</p>
-            <select>
-                <option value="AZ100">Azure Administrator, Deployment (AZ100)</option>
-                <option value="AZ200">Developing Solutions for Microsoft Azure (AZ-203)</option>
-                <option value="AZ300">Microsoft Azure (AZ-300)</option>
-            </select>
-
-            <br>
-            <p><strong>Additional</strong></p>
-            <p>
-                <input type="checkbox" name="hackathon" value="Hackathon"> We need Hackathon<br>
-                Hackathon Details:<input type="text" name="fname"><br>
-            </p>
-
-            <p>
-
-                <input type="checkbox" name="vehicle" value="Car" checked> We need Workshop<br>
-                Workshop Details: <input type="text" name="fname"><br>
-            </p>
-
-            <input type="submit" value="Submit">
+        
 
 
-        </div>
+    </div>
+
+
+
 </body>
 </html>

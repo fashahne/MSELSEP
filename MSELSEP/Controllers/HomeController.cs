@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MSELSEP.Models;
 using MSELSEP.Controllers;
-using System;
 using System.Net.Http;
 using System.Web;
-using MSELSEP.Models;
 using Newtonsoft.Json;
 using System.Runtime.InteropServices.WindowsRuntime;
 
@@ -90,7 +88,7 @@ namespace MSELSEP.Controllers
                     response.EnsureSuccessStatusCode();
                     string responseBody = await response.Content.ReadAsStringAsync();
                 
-                    CSCInfo info = JsonConvert.DeserializeObject<CSCInfo>(responseBody);
+                    CSCInfoModel info = JsonConvert.DeserializeObject<CSCInfoModel>(responseBody);
 
                     Console.WriteLine(info.ContestId);
                     Console.WriteLine(info.Teams);
@@ -145,5 +143,36 @@ namespace MSELSEP.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public ActionResult ReqTrain()
+        {
+            return View(new ReqTrainingModel());
+        }
+
+        [HttpPost]
+        public ActionResult ReqTrain(ReqTrainingModel treq)
+        {
+            string _MSFTEmail = treq.MSFTEmail;
+
+            string _CustomerTeams = treq.CustomerTeams;
+
+            string _CustomerCounrty = treq.CustomerCounrty;
+
+            int _NumberOfTrainne = treq.NumberOfTrainne;
+
+            string _CustomerEmail = treq.CustomerEmail;
+
+            string _CustomerCode = treq.CustomerCode;
+
+
+            string _Course = treq.Course;
+
+            
+            return View();
+        }
+
+      
+
+
     }
 }

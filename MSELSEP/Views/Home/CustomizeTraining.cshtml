@@ -1,11 +1,19 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model MSELSEP.Models.ReqTrainingModel
+
+
+@{
+    ViewData["Title"] = "CustomizeTraining";
 }
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title>Training & Certifications</title>
+    <script>
+        function updateTextInput(val) {
+            document.getElementById('textInput').value = val;
+        }
+    </script>
 </head>
 <body>
 
@@ -105,125 +113,100 @@
     </div>
 
 
-    @*<div class="row" style="background-color:azure">
-            <h1>Training Course Contents</h1>
-            <div class="col-md-4">
-                <strong>Azure Administrator, Deployment (AZ100) </strong>
-                <div class="ftindex">
-                    <h5>Manage Subscriptions and Resources</h5>
-                    <ul>
-                        <li>Managing Azure Subscriptions</li>
-                        <li>Access Management for Cloud Resources</li>
-                        <li>Monitoring and Diagnostics</li>
-                        <li>Log Analytics</li>
-                        <li>Azure Resource Manager</li>
-                        <li>Azure Tips, Tricks, and Tools</li>
-                    </ul>
-                    <h5>Implementing and Managing Storage</h5>
-                    <ul>
-                        <li>Overview of Azure Storage</li>
-                        <li>Storage Services</li>
-                        <li>Securing and Managing Storage</li>
-                        <li>Storing and Accessing Data</li>
-                        <li>Monitoring Storage</li>
-                    </ul>
-                    <h5>Deploying and Managing Virtual Machines</h5>
-                    <ul>
-                        <li>Overview of Azure Machines</li>
-                        <li>Creating Virtual Machines</li>
-                        <li>Deploying Virtual Machine Images</li>
-                        <li>Configuring Virtual Machines</li>
-                        <li>Configuring Availability and Extensibility</li>
-                        <li>Managing and Monitoring Virtual Machines</li>
-                    </ul>
-                    <a href="~/Home/Course"> ....continue course content</a>
+    <div class="row" style="background-color: black; color:darkgrey; padding-top: 35px; text-align: inherit; padding-left: 20px; padding-right: 20px; padding-bottom:35px; border-color:darkgrey; border-style:dotted;">
+        <h1>Request Microsoft Training</h1>
+
+
+
+
+
+
+
+
+
+
+
+        @using (Html.BeginForm("ReqTrain", "Home", FormMethod.Post))
+        {
+           
+            @*<form asp-action="ReqTrain" asp-controller="Home">*@
+    <div class="col-md-6">
+
+
+
+        <p>
+            <strong>Deloitte Teams</strong><br>
+            @*<textarea rows="4" cols="50" placeholder="How will the learning and development support the business goals?"></textarea>*@
+            @Html.TextBoxFor(s => s.CustomerTeams)
+        </p>
+
+        <p>
+            <strong>Country and City</strong><br>
+            @Html.TextBoxFor(s => s.CustomerCounrty)
+            @*<textarea rows="4" cols="50" placeholder="What are the skills required to meet the business goals."></textarea>*@
+        </p>
+
+        <p>
+            <strong>Number of Trainees:</strong><br>
+            @Html.TextBoxFor(s => s.NumberOfTrainne)
+            @*<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
+            <input type="text" id="textInput" value="">*@
+        </p>
+
+        <p>
+            <strong>Courses:</strong><br>
+            @Html.TextBoxFor(s => s.Course)
+            @*<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
+            <input type="text" id="textInput" value="">*@
+        </p>
+        <p>
+            <fieldset>
+                <legend style="color: darkgray;">Select Training Courses</legend>
+                <div>
+                    <input type="checkbox" id="AZ100" name="interest" value="AZ100">
+                    <label for="AZ100">Azure Administrator, AZ 100</label>
                 </div>
-
-            </div>
-            <div class="col-md-4">
-
-                <strong>Developing Solutions for Microsoft Azure (AZ-203)</strong>
-                <h5>Implement solutions that use virtual machines (VM)</h5>
-                <ul>
-                    <li>Provision VMs</li>
-                    <li>Create ARM templates</li>
-                    <li>Configure Azure Disk Encryption for VMs</li>
-                </ul>
-                <h5>Implement batch jobs by using Azure Batch Services</h5>
-                <ul>
-                    <li>Manage batch jobs by using Batch Service API</li>
-                    <li>Run a batch job by using Azure CLI, Azure portal, and other tools</li>
-                    <li>Write code to run an Azure Batch Services batch job</li>
-                </ul>
-                <h5>Create containerized solutions</h5>
-                <ul>
-                    <li>Create an Azure Managed Kubernetes Service (AKS) cluster</li>
-                    <li>Create container images for solutions</li>
-                    <li>Publish an image to the Azure Container Registry</li>
-                    <li>Run containers by using Azure Container Instance or AKS</li>
-                </ul>
-                <h5>Create Azure App Service Web Apps</h5>
-                <ul>
-                    <li>Create an Azure App Service Web App</li>
-
-                </ul>
-
-                <a href="~/Home/Course"> ....continue course content</a>
-            </div>
-
-        </div>*@
+                <div>
+                    <input type="checkbox" id="AZ203" name="interest" value="AZ203">
+                    <label for="AZ203">Developing Solutions for Microsoft Azure, AZ-203</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="AZ301" name="interest" value="AZ301">
+                    <label for="AZ301">Azure Architect Technologies, AZ 301</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="AZ400" name="interest" value="AZ400">
+                    <label for="AZ400">Azure DevOps Engineer Expert,  AZ 400</label>
+                </div>
+            </fieldset>
 
 
+        </p>
 
-<div class="row" style="background-color: black; color:darkgrey; padding-top: 35px; text-align: inherit; padding-left: 20px; padding-right: 20px; padding-bottom:35px; border-color:darkgrey; border-style:dotted;">
-    <h1>Request Microsoft Training</h1>
-
-
-
-    <div class="col-md-6">
-
-        <p><strong>Deloitte Situation</strong></p>
-        <textarea rows="4" cols="50" placeholder="How will the learning and development support the business goals?"></textarea>
-
-
-        <p><strong>Skill Requirements</strong></p>
-        <textarea rows="4" cols="50" placeholder="What are the skills required to meet the business goals."></textarea>
-
-
-        <p>Number of Trainees:</p>
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-
-        <p>Training Course:</p>
-        <select>
-            <option value="AZ100">Azure Administrator, Deployment (AZ100)</option>
-            <option value="AZ200">Developing Solutions for Microsoft Azure (AZ-203)</option>
-            <option value="AZ300">Microsoft Azure (AZ-300)</option>
-            <option value="AZ300">Microsoft Azure (AZ-300)</option>
-            <option value="AZ300">Microsoft Azure (AZ-300)</option>
-            <option value="AZ300">Microsoft Azure (AZ-300)</option>
-            <option value="AZ300">Microsoft Azure (AZ-300)</option>
-        </select>
     </div>
 
-    <div class="col-md-6">
-        <p>
-            Your Deloitte Email:<br>
-            <input type="text" name="deloitteEmail" placeholder="example@deloitte.com">
-        </p>
-        <p>
-            Your Microsoft Contact:<br>
-            <input type="text" name="msftEmail" placeholder="example@microsoft.com">
-        </p>
-        <p>
-            Deloitte Customer Code:<br>
-            <input type="text" name="csCode" placeholder="641727">
-        </p>
-        <input type="submit" value="Submit">
-    </div>
+            <div class="col-md-6">
+                <p>
+                    Your Deloitte Email:<br>
+                    @Html.TextBoxFor(s => s.CustomerEmail)
+                    @*<input type="text" name="deloitteEmail" placeholder="example@deloitte.com">*@
+                </p>
+                <p>
+                    Your Microsoft Contact:<br>
+                    @Html.TextBoxFor(s => s.MSFTEmail)
+                    @*<input type="text" name="msftEmail" placeholder="example@microsoft.com">*@
+                </p>
+                <p>
+                    Deloitte Customer Code:<br>
+                    @Html.TextBoxFor(s => s.CustomerCode)
+                    @*<input type="text" name="csCode" placeholder="641727">*@
+                </p>
+                <input type="submit" value="Submit" />
 
-        
 
-
+            </div>
+            @*</form>*@
+        }
     </div>
 
 

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MSELSEP.Models
 {
-    public class CSCInfo
+    public class CSCInfoModel
     {
         public string ContestId { get; set; }
         public string Status { get; set; }

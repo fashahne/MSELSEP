@@ -20,7 +20,9 @@ namespace MSELSEP.Controllers
         public string deloitteemail { get; set; }
         public int deloittenumber { get; set; }
         public string deloitteteam { get; set; }
-        
+
+        public string coursename { get; set; }
+
     }
     public class HomeController : Controller
     {
@@ -184,7 +186,8 @@ namespace MSELSEP.Controllers
             {
                 deloitteemail = _CustomerEmail,
                 deloittenumber = _NumberOfTrainne,
-                deloitteteam = _CustomerTeams
+                deloitteteam = _CustomerTeams,
+                coursename = _Course
                 
   
             };

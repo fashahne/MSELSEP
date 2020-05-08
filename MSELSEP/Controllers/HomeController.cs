@@ -10,11 +10,22 @@ using System.Net.Http;
 using System.Web;
 using Newtonsoft.Json;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Microsoft.IdentityModel.Protocols;
+using System.Text;
 
 namespace MSELSEP.Controllers
 {
+    public class JSONSer
+    {
+        public string deloitteemail { get; set; }
+        public int deloittenumber { get; set; }
+        public string deloitteteam { get; set; }
+        
+    }
     public class HomeController : Controller
     {
+        private object txt;
+
         public IActionResult Index()
         {
             return View();
@@ -150,7 +161,7 @@ namespace MSELSEP.Controllers
         }
 
         [HttpPost]
-        public ActionResult ReqTrain(ReqTrainingModel treq)
+        public async Task <ActionResult> ReqTrain(ReqTrainingModel treq)
         {
             string _MSFTEmail = treq.MSFTEmail;
 
@@ -167,12 +178,31 @@ namespace MSELSEP.Controllers
 
             string _Course = treq.Course;
 
+
             
+            JSONSer jser = new JSONSer
+            {
+                deloitteemail = _CustomerTeams,
+                deloittenumber = _NumberOfTrainne,
+                deloitteteam = _CustomerTeams
+                
+  
+            };
+            string json = JsonConvert.SerializeObject(jser, Formatting.Indented);
+            Console.WriteLine(json);
+
+            
+
+            using (var client = new HttpClient())
+            {
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var response = client.PostAsync("https://prod-55.eastus.logic.azure.com:443/workflows/957082ccaa4c4c12b457ba59bf8d1deb/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=p_bjmnbe2qMlYtEMHKvdJ9zjgRYQOrSLQ6PgWujeEvA", content).Result;
+            }
+
+            //https://prod-55.eastus.logic.azure.com:443/workflows/957082ccaa4c4c12b457ba59bf8d1deb/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=p_bjmnbe2qMlYtEMHKvdJ9zjgRYQOrSLQ6PgWujeEvA
             return View();
         }
 
-      
-
-
+    
     }
 }

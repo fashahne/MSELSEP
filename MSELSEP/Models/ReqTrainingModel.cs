@@ -3,13 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace MSELSEP.Models
 {
     public class ReqTrainingModel   {
 
-      
-            public string CustomerTeams { get; set; }
+        [Required(ErrorMessage = "Field is required")]
+        public string CustomerTeams { get; set; }
 
             public string CustomerCounrty { get; set; }
 

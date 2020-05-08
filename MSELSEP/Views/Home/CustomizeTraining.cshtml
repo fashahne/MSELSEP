@@ -128,62 +128,64 @@
 
         @using (Html.BeginForm("ReqTrain", "Home", FormMethod.Post))
         {
-           
+            @Html.ValidationSummary(true)
+            @Html.AntiForgeryToken()
             @*<form asp-action="ReqTrain" asp-controller="Home">*@
-    <div class="col-md-6">
+            <div class="col-md-6">
 
 
 
-        <p>
-            <strong>Deloitte Teams</strong><br>
-            @*<textarea rows="4" cols="50" placeholder="How will the learning and development support the business goals?"></textarea>*@
-            @Html.TextBoxFor(s => s.CustomerTeams)
-        </p>
+                <p>
+                    <strong>Deloitte Teams</strong><br>
+                    @*<textarea rows="4" cols="50" placeholder="How will the learning and development support the business goals?"></textarea>*@
+                    @Html.TextBoxFor(s => s.CustomerTeams)
+                   
+                </p>
 
-        <p>
-            <strong>Country and City</strong><br>
-            @Html.TextBoxFor(s => s.CustomerCounrty)
-            @*<textarea rows="4" cols="50" placeholder="What are the skills required to meet the business goals."></textarea>*@
-        </p>
+                <p>
+                    <strong>Country and City</strong><br>
+                    @Html.TextBoxFor(s => s.CustomerCounrty)
+                    @*<textarea rows="4" cols="50" placeholder="What are the skills required to meet the business goals."></textarea>*@
+                </p>
 
-        <p>
-            <strong>Number of Trainees:</strong><br>
-            @Html.TextBoxFor(s => s.NumberOfTrainne)
-            @*<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
-            <input type="text" id="textInput" value="">*@
-        </p>
+                <p>
+                    <strong>Number of Trainees:</strong><br>
+                    @Html.TextBoxFor(s => s.NumberOfTrainne)
+                    @*<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
+                    <input type="text" id="textInput" value="">*@
+                </p>
 
-        <p>
-            <strong>Courses:</strong><br>
-            @Html.TextBoxFor(s => s.Course)
-            @*<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
-            <input type="text" id="textInput" value="">*@
-        </p>
-        <p>
-            <fieldset>
-                <legend style="color: darkgray;">Select Training Courses</legend>
-                <div>
-                    <input type="checkbox" id="AZ100" name="interest" value="AZ100">
-                    <label for="AZ100">Azure Administrator, AZ 100</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="AZ203" name="interest" value="AZ203">
-                    <label for="AZ203">Developing Solutions for Microsoft Azure, AZ-203</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="AZ301" name="interest" value="AZ301">
-                    <label for="AZ301">Azure Architect Technologies, AZ 301</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="AZ400" name="interest" value="AZ400">
-                    <label for="AZ400">Azure DevOps Engineer Expert,  AZ 400</label>
-                </div>
-            </fieldset>
+                <p>
+                    <strong>Courses:</strong><br>
+                    @Html.TextBoxFor(s => s.Course)
+                    @*<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
+                    <input type="text" id="textInput" value="">*@
+                </p>
+                <p>
+                    <fieldset>
+                        <legend style="color: darkgray;">Select Training Courses</legend>
+                        <div>
+                            <input type="checkbox" id="AZ100" name="interest" value="AZ100">
+                            <label for="AZ100">Azure Administrator, AZ 100</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="AZ203" name="interest" value="AZ203">
+                            <label for="AZ203">Developing Solutions for Microsoft Azure, AZ-203</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="AZ301" name="interest" value="AZ301">
+                            <label for="AZ301">Azure Architect Technologies, AZ 301</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="AZ400" name="interest" value="AZ400">
+                            <label for="AZ400">Azure DevOps Engineer Expert,  AZ 400</label>
+                        </div>
+                    </fieldset>
 
 
-        </p>
+                </p>
 
-    </div>
+            </div>
 
             <div class="col-md-6">
                 <p>

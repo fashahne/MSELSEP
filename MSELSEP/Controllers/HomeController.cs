@@ -182,7 +182,7 @@ namespace MSELSEP.Controllers
             
             JSONSer jser = new JSONSer
             {
-                deloitteemail = _CustomerTeams,
+                deloitteemail = _CustomerEmail,
                 deloittenumber = _NumberOfTrainne,
                 deloitteteam = _CustomerTeams
                 

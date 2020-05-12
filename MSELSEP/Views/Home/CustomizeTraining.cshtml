@@ -33,7 +33,7 @@
     <div class="row" style="background-color: black; color:darkgrey; padding-top: 35px; text-align: inherit; padding-left: 20px; padding-right: 20px; padding-bottom:20px;">
 
         <div style=" padding-top: 35px; padding-bottom:35px; padding-right:50px;">
-            <img src="~/images/learningpath_graphic.svg"><font style="font-size:34px;">Training & Certifications</font>
+            <img src="~/images/learningpath_graphic.svg"><font style="font-size:34px; color:deepskyblue;">Training & Certifications</font>
         </div>
 
 
@@ -167,11 +167,11 @@
                     <input type="text" id="textInput" value="">*@
                 </p>
 
-                <p>
+                @*<p>
                     <strong>Courses:</strong><br>
                     @Html.TextBoxFor(s => s.Course)
-                    @*<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
-                    <input type="text" id="textInput" value="">*@
+                    <input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
+                    <input type="text" id="textInput" value="">
                 </p>
                 <p>
                     <fieldset>
@@ -195,7 +195,7 @@
                     </fieldset>
 
 
-                </p>
+                </p>*@
 
             </div>
 

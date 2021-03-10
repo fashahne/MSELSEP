@@ -10,7 +10,7 @@ namespace MSELSEP.Controllers
     {
         static async void MakeRequest()
         {
-            //all set
+            //design patterns
             var client = new HttpClient();
             var queryString = HttpUtility.ParseQueryString(string.Empty);
 

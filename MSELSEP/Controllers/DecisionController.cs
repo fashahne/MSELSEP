@@ -7,6 +7,6 @@ namespace MSELSEP.Controllers
 {
     public class DecisionController
     {
-        //replicating decision tree for automation
+        //replicating decision tree for automations
     }
 }

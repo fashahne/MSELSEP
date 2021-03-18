@@ -8,5 +8,13 @@ namespace MSELSEP.Controllers
     public class DecisionController
     {
         //replicating decision tree for automations
+
+        public void Const() {
+        
+        
+        
+        }
+            
+            
     }
 }
